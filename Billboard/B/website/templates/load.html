@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>loaddata</title>
+  </head>
+  <body>
+    {% for list in commentlist %}
+    <tr>
+    <td>{{ CommentData.nickname }}</td>
+    <td>{{ CommentData.comment }}</td>
+    </tr>
+    {% endfor %}
+  </body>
+</html>

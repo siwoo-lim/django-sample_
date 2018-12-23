@@ -20,5 +20,5 @@ from website.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('write/', write, name='write'),
-    path('load/', load, name='load'),
+    path('write/load/', load, name='load'),
 ]

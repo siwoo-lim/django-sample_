@@ -2,13 +2,20 @@
 <html>
   <head>
     <title>loaddata</title>
+    <link rel="stylesheet" href="tablestyle.css">
   </head>
   <body>
+    <table style="border: 2px solid black;">
+      <th style="border: 2px solid black;">
+        <tr style="border: 2px solid black;">닉네임</tr>
+        <tr style="border: 2px solid black;">댓글 내용</tr>
+      </th>
     {% for list in commentlist %}
-    <tr>
-    <td>{{ CommentData.nickname }}</td>
-    <td>{{ CommentData.comment }}</td>
+    <tr style="border: 2px solid black;">
+    <td style="border: 2px solid black;">{{ list.nickname }}</td>
+    <td style="border: 2px solid black;">{{ list.comment }}</td>
     </tr>
     {% endfor %}
+    </table>
   </body>
 </html>
